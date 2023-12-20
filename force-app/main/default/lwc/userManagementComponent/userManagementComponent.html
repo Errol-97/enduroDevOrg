@@ -1,0 +1,11 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-datatable
+        key-field="Id"
+        data={users}
+        columns={columns}
+        draft-values={draftValues}
+        onsave={handleSave}
+        onrowchange={handleRowChange}>
+    </lightning-datatable>
+</template>

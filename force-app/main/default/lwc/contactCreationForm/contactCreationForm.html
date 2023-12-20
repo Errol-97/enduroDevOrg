@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="ContactCreationForm" icon-name="standard:contact">
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2 slds-var-p-left_small slds-var-p-right_small">
+                <lightning-input label="First Name" type="text" name="firstNameVar" onchange={handleInputChange} required></lightning-input>
+                <lightning-input label="Last Name" type="text" name="lastNameVar" onchange={handleInputChange} required></lightning-input>
+            </div>
+            <div class="slds-col slds-size_1-of-2 slds-var-p-left_small slds-var-p-right_small">
+                <lightning-input label="Email" type="email" name="emailVar" onchange={handleInputChange} required></lightning-input>
+            </div>
+            <div class="slds-align_absolute-center slds-var-m-top_medium">
+                <lightning-button variant="brand" label="Next" onclick={handleClickNext} class="slds-var-m-top_medium"></lightning-button>
+            </div>
+        </div>
+    </lightning-card>
+</template>

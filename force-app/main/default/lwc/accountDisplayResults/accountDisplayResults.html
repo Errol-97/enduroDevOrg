@@ -1,0 +1,7 @@
+<template>
+    <ul>
+        <template for:each={selectedAccounts} for:item="account">
+            <li key={account.Id}>{account.Name}</li>
+        </template>
+    </ul>
+</template>
